@@ -46,6 +46,12 @@ body {
   }
   .nav_bar {
     display: none;
+    position: absolute;
+    top: 82px;
+    width: 100%;
+    padding-top: 194px;
+    padding-bottom: 194px;
+    background-color: #1b1a17;
     flex-direction: column;
     gap: 64px;
     align-items: center;
@@ -54,7 +60,96 @@ body {
     font-weight: 700;
     line-height: 25px;
     text-align: left;
-
-    transition: 0.3s ease;
+    transition: 0.5s ease;
+  }
+  /*-------------------------------welcome box---------------------*/
+  .box_welcome_title {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 314px;
+    margin-top: 128px;
+    margin-bottom: 64px;
+  }
+  .name {
+    font-family: Inconsolata;
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 42px;
+    color: var(--yellow);
+    text-align: left;
+    margin-bottom: 16px;
+  }
+  .job {
+    font-family: Inconsolata;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 34px;
+    text-align: left;
+    margin-bottom: 16px;
+  }
+  .content {
+    font-family: Inconsolata;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 25px;
+    text-align: left;
+  }
+  .illustration_welcome {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  .illustration_welcome img {
+    margin-left: 18px;
+    margin-bottom: 128px;
+  }
+  /*-------------------------------About box---------------------*/
+  .box_about_me {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 64px;
+  }
+  .text_about {
+    margin-top: 32px;
+    margin-bottom: 64px;
+    font-family: Inconsolata;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 25px;
+    text-align: left;
+  }
+  /*-------------------------------About box---------------------*/
+  .box_skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 72px;
+  }
+  .title_skills {
+    font-family: Inconsolata;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 34px;
+    color: var(--yellow);
+    text-align: center;
+    margin-bottom: 32px;
+  }
+  .card_skills {
+    width: 285px;
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    background-color: #21201d;
+    padding: 14px 32px;
+    margin-bottom: 16px;
+    font-family: Inconsolata;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 25px;
+    text-align: left;
   }
 }
