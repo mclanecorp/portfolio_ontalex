@@ -5,7 +5,7 @@ const nav_bar = document.getElementById("nav_bar");
 
 menu.style.display = "block";
 close.style.display = "none";
-nav_bar.style.display = "none";
+/*nav_bar.style.display = "flex";*/
 
 hamburger.addEventListener("click", () => {
   if (menu.style.display === "block") {
@@ -15,6 +15,17 @@ hamburger.addEventListener("click", () => {
   } else {
     menu.style.display = "block";
     close.style.display = "none";
+    nav_bar.style.display = "none";
+  }
+});
+
+window.addEventListener("resize", function () {
+  // vérifier la largeur de la fenêtre
+  if (window.innerWidth > 704) {
+    // changer la variable si la largeur dépasse 704px
+    nav_bar.style.display = "flex";
+  } else {
+    // remettre la variable à sa valeur initiale si la largeur est inférieure ou égale à 704px
     nav_bar.style.display = "none";
   }
 });

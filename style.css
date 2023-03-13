@@ -22,11 +22,265 @@ body {
   background-color: #1b1a17;
   color: var(--white);
 }
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.box_nav {
+  display: flex;
+
+  padding: 16px 8px;
+  font-family: Impact;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 39px;
+  text-align: center;
+}
+.hamburger {
+  display: none;
+}
+.nav_bar {
+  display: flex;
+  gap: 64px;
+  font-family: Inconsolata;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 25px;
+  text-align: left;
+  transition: 0.5s ease;
+}
+/*-------------------------------welcome box---------------------*/
+.welcome {
+  display: flex;
+}
+.box_welcome_title {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 314px;
+  margin-top: 128px;
+  margin-bottom: 64px;
+}
+.name {
+  font-family: Inconsolata;
+  font-size: 40px;
+  font-weight: 900;
+  line-height: 42px;
+  color: var(--yellow);
+  margin-bottom: 16px;
+}
+.job {
+  font-family: Inconsolata;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 34px;
+  text-align: left;
+  margin-bottom: 16px;
+}
+.content {
+  font-family: Inconsolata;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 25px;
+  text-align: left;
+}
+.illustration_welcome {
+  margin: 0 auto;
+}
+.illustration_welcome img {
+  margin-bottom: 128px;
+  margin-top: 50px;
+}
+/*-------------------------------About box---------------------*/
+.box_about_me {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 64px;
+}
+
+.text_about {
+  margin-top: 50px;
+  margin-bottom: 64px;
+  margin-left: 20px;
+  font-family: Inconsolata;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 25px;
+  text-align: left;
+}
+/*-------------------------------skills box---------------------*/
+.box_skills {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 72px;
+}
+.title_skills {
+  font-family: Inconsolata;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 34px;
+  color: var(--yellow);
+  text-align: center;
+  margin-bottom: 32px;
+}
+.card_skills {
+  width: 200px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+  background-color: #21201d;
+  padding: 14px 32px;
+  margin-bottom: 16px;
+  font-family: Inconsolata;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 25px;
+  text-align: left;
+}
+/*-------------------------------My Works---------------------*/
+.box_my_works {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+}
+.works_title {
+  font-family: Inconsolata;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 34px;
+  color: var(--yellow);
+  text-align: center;
+  margin-bottom: 32px;
+}
+.card_black {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 16px;
+}
+.news_blog {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  background-color: #21201d;
+  height: 100%;
+  padding: 29px 27px;
+  opacity: 0.97;
+}
+.title_news {
+  font-family: Inconsolata;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 34px;
+  color: var(--yellow);
+  text-align: left;
+  margin-bottom: 16px;
+}
+.techno_news {
+  font-family: Inconsolata;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 17px;
+  text-align: left;
+  margin-bottom: 16px;
+}
+.line_works {
+  height: 0.5px;
+  background-color: var(--yellow);
+  width: 70%;
+  margin-bottom: 16px;
+}
+.content_news {
+  font-family: Inconsolata;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 19px;
+  text-align: left;
+  margin-bottom: 16px;
+}
+.link_works {
+  background-color: #32312e;
+  padding: 16px 24px;
+  border-radius: 4px;
+}
+/*-------------------------------footer---------------------*/
+footer {
+  display: flex;
+  justify-content: center;
+}
+.box_text_contac {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10x;
+}
+.title_footer {
+  font-family: Impact;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 44px;
+  letter-spacing: 0em;
+  text-align: center;
+  margin-top: 64px;
+}
+.text_footer {
+  width: 213px;
+  font-family: Inconsolata;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: left;
+  margin: 16px 55px 64px 55px;
+}
+.contacts_footer {
+  display: flex;
+  flex-direction: column;
+  margin: 0 60px;
+  margin-top: 64px;
+  margin-bottom: 64px;
+}
+.title_contacts {
+  font-family: Impact;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 39px;
+  color: var(--yellow);
+  text-align: left;
+  margin-bottom: 16px;
+}
+.text_contacts {
+  font-family: Inconsolata;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 25px;
+  text-align: left;
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 32px;
+  margin-right: 40px;
+}
+.text_contacts img {
+  margin-right: 16px;
+}
 
 /*-------------------------------responsive telephone---------------------*/
 /*------------------------------------------------------------------------*/
 /*------------------------------------------------------------------------*/
 @media screen and (max-width: 704px) {
+  .hamburger {
+    display: block;
+  }
+  header {
+    display: inline;
+  }
   .box_nav {
     display: flex;
     align-items: center;
@@ -63,6 +317,9 @@ body {
     transition: 0.5s ease;
   }
   /*-------------------------------welcome box---------------------*/
+  .welcome {
+    display: inline;
+  }
   .box_welcome_title {
     display: flex;
     flex-direction: column;
@@ -122,7 +379,7 @@ body {
     line-height: 25px;
     text-align: left;
   }
-  /*-------------------------------About box---------------------*/
+  /*-------------------------------skills box---------------------*/
   .box_skills {
     display: flex;
     flex-direction: column;
@@ -151,5 +408,131 @@ body {
     font-weight: 500;
     line-height: 25px;
     text-align: left;
+  }
+
+  /*-------------------------------My Works---------------------*/
+  .box_my_works {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .works_title {
+    font-family: Inconsolata;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 34px;
+    color: var(--yellow);
+    text-align: center;
+    margin-bottom: 32px;
+  }
+  .card_black {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+  .news_blog {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    background-color: #21201d;
+    height: 100%;
+    padding: 29px 27px;
+    opacity: 0.97;
+  }
+  .title_news {
+    font-family: Inconsolata;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 34px;
+    color: var(--yellow);
+    text-align: left;
+    margin-bottom: 16px;
+  }
+  .techno_news {
+    font-family: Inconsolata;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 17px;
+    text-align: left;
+    margin-bottom: 16px;
+  }
+  .line_works {
+    height: 0.5px;
+    background-color: var(--yellow);
+    width: 70%;
+    margin-bottom: 16px;
+  }
+  .content_news {
+    font-family: Inconsolata;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 19px;
+    text-align: left;
+    margin-bottom: 16px;
+  }
+  .link_works {
+    background-color: #32312e;
+    padding: 16px 24px;
+    border-radius: 4px;
+  }
+  /*-------------------------------footer---------------------*/
+  footer {
+    display: flex;
+    flex-direction: column;
+  }
+  .title_footer {
+    font-family: Impact;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 44px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin-top: 64px;
+  }
+  .box_text_contac {
+    display: inline;
+  }
+  .text_footer {
+    width: 100%;
+    font-family: Inconsolata;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: left;
+    padding-right: 55px;
+    margin: 16px 55px 64px 55px;
+  }
+  .contacts_footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 60px;
+
+    margin-bottom: 64px;
+  }
+  .title_contacts {
+    font-family: Impact;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 39px;
+    color: var(--yellow);
+    text-align: left;
+    margin-bottom: 16px;
+  }
+  .text_contacts {
+    font-family: Inconsolata;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 25px;
+    text-align: left;
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 32px;
+  }
+  .text_contacts img {
+    margin-right: 16px;
   }
 }
